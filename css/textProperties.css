@@ -1,0 +1,11 @@
+.contact-form {
+    font-size: 24px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    font-family: 'Neonderthaw', cursive;
+    /* line-height: 2; */
+    font-weight: lighter;
+    color: red
+}
