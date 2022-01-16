@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.411);
+    font-size: 1.2cm;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* Fixed units */
+.contact-form__h2 {
+    /* We can use px, cm, mm, pt (points) etc. */
+    font-size: 15mm;
+}
+
+/* Relative units: They are better when we want to adapt our design to mobile devices */
+.contact-form__h2--relative {
+    /* We can use em, rem*/
+    /* 1em = 16px by default, however, 1eq = length from parent, in this case in which we defined .contact-form fontsize= 1.2cm, in our child .contact-form__h2--relative, 1em = 1.2cm 
+    
+    It works with any preperty who uses units: margin, padding, etc.*/
+
+    font-size: 1em;
+
+}
