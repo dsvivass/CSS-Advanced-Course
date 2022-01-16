@@ -1,0 +1,46 @@
+/* universal selector: selects all elements */
+* { 
+    color: red
+}
+
+/* Type selector: selects all elements with the given type */
+h1 {
+    color: blue;
+}
+
+/* Class selector: selects all elements with the given class */
+.title3 {
+    color: green;
+}
+
+/* id selector: selects an element with the given id */
+#idTitle {
+    color: yellow;
+}
+
+/* Attribute selector: selects elements with the given attribute */
+[myAttribute="customValue"] {
+    color: purple;
+}
+
+/* descendent selector: selects all elements that are descendents of the given element */
+h4 span {
+    color: orange;
+}
+
+h4 p {
+    color: gray;
+}
+
+.myH4 p {
+    color: rgb(35, 211, 255);
+}
+
+.myH4 p span {
+    color: rgb(51, 255, 0);
+}
+
+/* pseudo-class selector: selects elements that match the given selector */
+.myH4:hover {
+    color: rgb(0, 0, 0);
+}
