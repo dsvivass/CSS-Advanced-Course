@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <Link rel="stylesheet" type="text/css" href="./index.css" />
+    <Link rel="stylesheet" type="text/css" href="./bemMethodology.css" />
+
 </head>
 
 <body>
@@ -18,18 +20,58 @@
 
     <input type="text" value="Insert text" />
 
-    <p myAttribute="customValue2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora architecto sed illo, sit quia
+    <p myAttribute="customValue2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora
+        architecto sed illo, sit quia
         aspernatur. Optio blanditiis sunt ratione nostrum, adipisci culpa perspiciatis ab mollitia repudiandae. Nulla,
         cupiditate enim.</p>
 
     <h2 class="title3" id="idTitle">Ejemplo de selector por clase y id</h2>
     <h2 class="title3">Ejemplo de selector por clase</h2>
 
-    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, aspernatur. <p>Texto dentro de p</p></h4>
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, aspernatur. <p>Texto dentro de p</p>
+    </h4>
 
     <h4>Ejemplo de selector por descendencia <span>Texto dentro de span</span></h4>
 
-    <h4 class="myH4">Ejemplo de selector por descendencia con clase <p>Texto dentro de h4 <span>Span dentro de p</span></p></h4>
+    <h4 class="myH4">Ejemplo de selector por descendencia con clase <p>Texto dentro de h4 <span>Span dentro de p</span>
+        </p>
+    </h4>
+
+    <a id="myAId" class="a-class" myAttr="myA" style="background-color: blueviolet;">a for specificity</a>
+
+    <p>________________________________________________________________________________________________</p>
+
+    <h1>BEM Methodology</h1>
+
+    <p>Trabajamos todo con clases, y en los hijos ponemos el nombre del papa con dos __ seguido del nombre de nuestro
+        elemento</p>
+
+    <p>Si tenemos varios elementos del mismo tipo y queremos resaltar uno en específico, colocamos -- al final seguido
+        del nombre:</p>
+
+    <p>Ej: en el input del password como es especial y le queremos hacer algo diferente, colocamos <br>
+        <b>contact-form__input--active</b>
+    </p>
+
+    <div class="contact-form">
+        <input type="text" placeholder="common input" class="contact-form__input" />
+        <input type="text" placeholder="common input" class="contact-form__input" />
+        <input type="text" placeholder="common input" class="contact-form__input" />
+        <input type="text" placeholder="common input" class="contact-form__input" />
+        <input type="text" placeholder="common input" class="contact-form__input" />
+        <input type="password" placeholder="Special input" class="contact-form__input--active" />
+    </div>
+
+    <p>Si tenemos varios hijos, no es necesario poner __ en todo, solo en el padre principal, en los demas colocamos -
+        <br>Ej: Si tenemos un <b>Div</b> y dentro un <b>p</b> y dentro del p un <b>h1</b> <br>
+        Y el nombre de la clase del div es <i>about-form</i> entonces la clase del p sera <i>about-form__p</i> y la clase del h1 será <i>about-form__p1-h1</i> <br> Inspeccionar para ver el ejemplo</p>
+
+    <div class="about-form">
+        <p class='about-form__p'>
+            P
+        <h1 class="about-form__p-h1"> h1</h1>
+        </p>
+    </div>
 
 </body>
 

@@ -1,3 +1,9 @@
+/* ----------------------------------------------------------- */
+/* |                                                         | */
+/* |                       SELECTORS                         | */
+/* |                                                         | */
+/* ----------------------------------------------------------- */
+
 /* universal selector: selects all elements */
 * { 
     color: red
@@ -44,3 +50,43 @@ h4 p {
 .myH4:hover {
     color: rgb(0, 0, 0);
 }
+
+/* ----------------------------------------------------------- */
+/* |                                                         | */
+/* |                       SPECIFICITY                       | */
+/* |                                                         | */
+/* ----------------------------------------------------------- */
+
+/* Always takes priority on the last style applied to the element */
+/* This is called cascading. */
+
+h3 {
+    color: rgb(255, 0, 0);
+}
+
+h3 {
+    /* This is the (last) style applied to the h3 element */
+    color: rgb(0, 255, 0);
+}
+
+a {
+    background-color: aliceblue !important;
+}
+
+#myAId {
+    background-color: blue;
+}
+
+.a-class {
+    background-color: bisque;
+}
+
+/* Classes and attributes have the same specificity level, so it'll take the last style applied to the element. */
+[myAttr=myA] {
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    background-color: aqua;
+}
+
