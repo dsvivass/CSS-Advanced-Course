@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/boxModel.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="../index.html">Inicio</a>
+
+    <h2>Teoria de cajas (Box model)</h2>
+
+    <p>There are two types of box model:
+        block and inline-block.
+        - block takes the full width of the parent element.
+        - inline-block takes the width of the content.
+
+        Some elements have by default block, (h1, h2, etc. p ...)
+        And some others have inline-block, (b, span, etc.)</p>
+
+    <h2 class="h2-as-inline">Segundo H2 puesto como inline block</h2>
+
+    <h2>Restricciones</h2>
+
+    <b>A los elementos en linea:</b>
+    <ul>
+        <li>
+            No les puedo ajustar la altura, ni otras propiedades <br>
+            <span style="text-decoration:line-through;">height: 400px;</span><br>
+            <span style="text-decoration:line-through;">width: 400px;</span><br>
+            <b>NO funcionará</b>
+        </li>
+    </ul>
+
+    <b>A los elementos en bloque</b>
+    <ul>
+        <li>
+            Sí les puedo ajustar la altura, y otras propiedades <br>
+            <span>height: 400px;</span><br>
+            <span>width: 400px;</span><br>
+            <b>SÍ funcionará</b>
+        </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis facere id cupiditate aliquid. Ad
+        praesentium quia possimus inventore ipsam illo error, veniam sit voluptates, quas nobis dolore ipsum nulla.
+        Sapiente perferendis veritatis at itaque, vero necessitatibus, in, exercitationem nostrum beatae quasi modi
+        labore consequatur temporibus adipisci repellat magni! Nulla?</p>
+
+    <b>Elemento inline b</b>
+
+    <span>Elemento inline span</span>
+
+    <h1 class="h1-box-property">Propiedades de las cajas</h1>
+
+    <h2>Padding</h2>
+
+    <p>Es la distancia entre el texto y los bordes de la caja</p>
+
+    <img src="../images/padding.JPG" alt="padding">
+
+    <p class="padding-example">Ejemplo de padding</p>
+
+    <h2>box-content</h2>
+
+    <h4 class="no-box-sizing">Ejemplo sin box sizing</h4>
+    <h4 class="box-sizing-content-box">Ejemplo con box sizing: content-box</h4>
+    <h4 class="box-sizing-border-box">Ejemplo con box sizing: border-box (Deja el ancho y alto fijo al width y height respectivamente)</h4>
+
+    <h2>Margin</h2>
+
+    <p>Es la distancia entre cajas</p>
+
+    <img src="../images/margin.JPG" alt="">
+
+    <h2 class="h2-margin">Title 1</h2><h2 class="h2-margin">Title 2</h2>
+
+    <h2>Box model</h2>
+
+    <p>Box model con jerarquía</p>
+
+    <img src="../images/boxModel.JPG" alt="boxmodel">
+
+</body>
+
+</html>

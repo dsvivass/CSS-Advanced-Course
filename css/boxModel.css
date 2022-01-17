@@ -1,0 +1,61 @@
+/* There are two types of box model:
+block and inline-block.
+    - block takes the full width of the parent element.
+    - inline-block takes the width of the content. 
+    
+Some elements have by default block, (h1, h2, etc. p ...)
+And some others have inline-block, (b, span, etc.)*/
+
+.h2-as-inline {
+    display: inline;
+}
+
+.h1-box-property {
+    background-color: red;
+}
+
+.padding-example {
+    background-color: aqua;
+    display: inline-block;
+    /* padding: 20px 50px; Así 20px verticalmente y 50px a ambos lados horizontalmente */
+    /* padding: 20px 30px 40px; Si no definimos el left, toma por defecto el valor que le dimos al right */
+    padding: 20px 30px 40px 50px; /*Empezando desde arriba en el sentido de las manecillas del reloj*/
+}
+
+.no-box-sizing {
+    background-color: purple;
+    display: inline-block;
+    padding: 10px 20px 30px 40px;
+    width: 10px;
+    height: 10px;
+}
+
+.box-sizing-content-box {
+    background-color: rgba(255, 255, 0, 0.534);
+    display: inline-block;
+    padding: 10px 20px 30px 40px;
+    width: 200px;
+    height: 50px;
+
+    box-sizing: content-box;
+}
+
+.box-sizing-border-box {
+    background-color: rgba(255, 255, 0, 0.534);
+    display: inline-block;
+    padding: 10px 20px 30px 40px;
+    width: 150px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.h2-margin {
+    background-color: green;
+    text-align: center;
+    margin: 10px 20px 30px 40px;
+    /* border: 2px solid grey;
+    border-radius: 8px; */
+    box-shadow: 0 0 10px 2px grey; /* traslación en x, y, difuminación, rellenar, color */
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    transform: rotate(45deg);
+}
